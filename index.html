@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twitch Sync Player Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+  /* Layout: one quiet reading column; a short "in brief" block first, the full policy after. */
+  :root {
+    --bg: #faf9fd; --surface: #f0edfa; --fg: #1f1a2e; --muted: #5d5673;
+    --accent: #6d28d9; --rule: #ddd6f3;
+    --display: "Nunito", "Segoe UI", system-ui, sans-serif;
+    --body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14111d; --surface: #1f1a2e; --fg: #ece9f5; --muted: #a9a2bf;
+      --accent: #b79cff; --rule: #332b4a; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14111d; --surface: #1f1a2e; --fg: #ece9f5; --muted: #a9a2bf;
+    --accent: #b79cff; --rule: #332b4a; color-scheme: dark;
+  }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 400 17px/1.65 var(--body);
+    padding-inline: 20px; padding-block: 48px 72px;
+  }
+  main { max-width: 66ch; margin-inline: auto; display: flex; flex-direction: column; gap: 28px; }
+  header { display: flex; flex-direction: column; gap: 6px; }
+  h1 { font: 800 clamp(28px, 6vw, 38px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+  h2 { font: 700 20px/1.3 var(--display); margin: 0 0 6px; text-wrap: balance; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+  .meta { color: var(--muted); font-size: 15px; }
+  .brief { background: var(--surface); border-radius: 14px; padding: 20px 22px; }
+  .brief h2 { color: var(--accent); }
+  section { display: flex; flex-direction: column; gap: 8px; }
+  section + section { border-top: 1px solid var(--rule); padding-top: 24px; }
+  code { font-size: .9em; background: var(--surface); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<main>
+  <header>
+    <h1>Twitch Sync Player Privacy Policy</h1>
+    <p class="meta">Chrome extension · Last updated 6 October 2026</p>
+  </header>
+
+  <div class="brief">
+    <h2>In brief</h2>
+    <p>Twitch Sync Player does not collect, store on any server, sell or share any personal data. It has no analytics, no tracking and no account. The only things it remembers are your chosen delay and volume, and they stay inside your own browser.</p>
+  </div>
+
+  <section>
+    <h2>What the extension does</h2>
+    <p>It plays a Twitch live stream with a delay you choose, so the streamer's commentary can be lined up with a match you are watching on another screen.</p>
+  </section>
+
+  <section>
+    <h2>Data stored on your device</h2>
+    <p>The extension saves two settings in your browser's local storage:</p>
+    <ul>
+      <li>the delay, in seconds, you set for each channel you watched (stored next to the channel name);</li>
+      <li>your volume level.</li>
+    </ul>
+    <p>These settings never leave your computer. The developer cannot see them. Removing the extension deletes them.</p>
+  </section>
+
+  <section>
+    <h2>Data sent over the network</h2>
+    <p>To play a stream, the extension contacts Twitch directly from your browser, at <code>gql.twitch.tv</code> and <code>*.ttvnw.net</code>. It sends the name of the channel you chose and nothing about you: requests are made without your Twitch cookies or account.</p>
+    <p>As with any website you open, Twitch can see your IP address and standard browser information when the stream is loaded. How Twitch handles that is described in <a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitch's own privacy notice</a>.</p>
+    <p>The extension contacts no other server. Nothing is sent to the developer.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>activeTab:</strong> when you click the extension icon, it reads the address of the current tab only to find out which Twitch channel is open. It does not read the page's content.</li>
+      <li><strong>Access to <code>gql.twitch.tv</code> and <code>*.ttvnw.net</code>:</strong> needed to request and play the live stream.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Third parties</h2>
+    <p>No data is sold, transferred or shared with third parties. The extension is not affiliated with or endorsed by Twitch Interactive, Inc.</p>
+  </section>
+
+  <section>
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version will be published on this page with a new date. For questions, use the Support section of the extension's page on the Chrome Web Store.</p>
+  </section>
+</main>
+
+</body>
+</html>
